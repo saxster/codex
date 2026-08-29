@@ -1,10 +1,9 @@
 name: Close stale contributor PRs
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: "0 6 * * *"
-
 permissions:
   contents: read
   issues: write

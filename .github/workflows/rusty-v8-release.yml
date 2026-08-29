@@ -1,6 +1,8 @@
 name: rusty-v8-release
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       release_tag:

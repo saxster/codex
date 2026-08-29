@@ -1,9 +1,8 @@
 name: rust-release-prepare
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: "0 */4 * * *"
-
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false

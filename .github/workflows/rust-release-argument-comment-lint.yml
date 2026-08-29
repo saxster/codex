@@ -1,6 +1,8 @@
 name: rust-release-argument-comment-lint
 
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       publish:

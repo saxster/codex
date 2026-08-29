@@ -1,8 +1,8 @@
 name: blob-size-policy
 
 on:
-  pull_request: {}
-
+  push:
+    branches: [main]
 jobs:
   check:
     name: Blob size policy

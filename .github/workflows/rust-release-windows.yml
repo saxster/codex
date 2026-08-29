@@ -1,6 +1,8 @@
 name: rust-release-windows
 
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       release-lto:
